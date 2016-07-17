@@ -15,6 +15,8 @@ import android.widget.ListView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
+
 public class PlaylistContents extends AppCompatActivity {
 
     String background;
@@ -36,7 +38,7 @@ public class PlaylistContents extends AppCompatActivity {
         Context context = playlistContentsBackground.getContext();
         int playlistContentsBackgroundId = context.getResources().getIdentifier(background, "drawable", context.getPackageName());
         Glide.with(this).load(playlistContentsBackgroundId).centerCrop().into(playlistContentsBackground);
-        playlistContentsBackground.setColorFilter(R.color.playlistContentsBackgroundTint, PorterDuff.Mode.XOR);
+        playlistContentsBackground.setImageAlpha(40);
     }
     
     private void setupToolbar() {
@@ -48,21 +50,17 @@ public class PlaylistContents extends AppCompatActivity {
 
 
     private void setPlaylistContents() {
-        String[] items = new String[]{"Wax Tailor - Seize the day",
-                "Dabeull, Holybrune - DX7",
-                "Guts - I want you tonight",
-                "Moon Boots - Love Strong",
-                "P.E.O - Be My Woman",
-                "Alan Braxe - Palladium",
-                "Red Astaire - Love to Angie",
-                "Calvin Harris & Disciples - How deep is your love"
-        };
-
-        ArrayAdapter<String> itemsAdapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+        ArrayList<Song> arrayOfSongs = new ArrayList<Song>();
+        SongsAdapter adapter = new SongsAdapter(this, arrayOfSongs);
+        adapter.add(new Song("Wax Tailor","Seize the day",false));
+        adapter.add(new Song("Guts","I want you tonight",true));
+        adapter.add(new Song("P.E.O","Be My Woman",false));
+        adapter.add(new Song("Alan Braxe","Palladium",false));
+        adapter.add(new Song("Red Astaire","Love to Angie",false));
+        adapter.add(new Song("Calvin Harris & Disciples","How deep is your love",false));
 
         ListView listView = (ListView) findViewById(R.id.playlist_contents_list);
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
     }
 
     @Override
