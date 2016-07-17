@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mixtapd</string>
+    <string name="added_to_favorites">Agregado a favoritos</string>
+    <string name="mixtape01_name">Mixtape Vuelta a casa</string>
+    <string name="mixtape02_name">Mixtape viaje de montaña</string>
+    <string name="mixtape03_name">Mixtape Surfeando</string>
+    <string name="mixtape04_name">Mixtape Dentro de la ciudad</string>
+    <string name="playlist_contents_title"><xliff id="mixtapeName" default="Mixtape Name">%s</xliff> canciones</string>
+    <string name="playlist">Lista de reproducción</string>
+    <string name="now_playing_song_title">I want you tonight</string>
+    <string name="now_playing_song_artist">Guts</string>
+    <string name="favorites">Favoritos</string>
+    <string name="favorite">Favorito</string>
+    <string name="favorites_list">Lista de favoritos</string>
+    <string name="item_song_title">Titulo</string>
+    <string name="item_song_artist">Artista</string>
+    <string name="close">Cerrar</string>
+</resources>
