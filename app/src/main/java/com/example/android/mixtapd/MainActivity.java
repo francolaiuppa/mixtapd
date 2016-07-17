@@ -1,17 +1,15 @@
 package com.example.android.mixtapd;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.design.widget.Snackbar;
-import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -24,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setupMixtapes();
         setupToolbar();
+        goFullscreen();
+    }
+
+    public void goFullscreen() {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
     private void setupToolbar() {
@@ -79,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showFavorites() {
-        Snackbar.make(findViewById(R.id.frameLayout), "This will show the favorites list", Snackbar.LENGTH_LONG).show();
+        Intent favoritesIntent = new Intent(MainActivity.this, Favorites.class);
+        startActivity(favoritesIntent);
     }
 
     @Override

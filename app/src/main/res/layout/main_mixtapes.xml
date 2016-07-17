@@ -8,37 +8,102 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/mixtape01"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/home_mixtape_image_height"
-            android:longClickable="true"
-            android:scaleType="centerCrop"
-            android:contentDescription="Back home"/>
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/mixtape02"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/home_mixtape_image_height"
-            android:longClickable="true"
-            android:scaleType="centerCrop"
-            android:contentDescription="Ain't no mountain high enough" />
+            <ImageView
+                android:id="@+id/mixtape02"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_mixtape_image_height"
+                android:contentDescription="@string/mixtape02_name"
+                android:longClickable="true"
+                android:scaleType="centerCrop" />
 
-        <ImageView
-            android:id="@+id/mixtape03"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/home_mixtape_image_height"
-            android:longClickable="true"
-            android:scaleType="centerCrop"
-            android:contentDescription="Surfing" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/home_mixtape_text_margin_top"
+                android:paddingRight="@dimen/home_mixtape_padding_right"
+                android:text="@string/mixtape02_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_mixtape_text_size" />
 
-        <ImageView
-            android:id="@+id/mixtape04"
+        </FrameLayout>
+
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/home_mixtape_image_height"
-            android:longClickable="true"
-            android:scaleType="centerCrop"
-            android:contentDescription="Deep into the city" />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mixtape01"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_mixtape_image_height"
+                android:contentDescription="@string/mixtape01_name"
+                android:longClickable="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/home_mixtape_text_margin_top"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="@string/mixtape01_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_mixtape_text_size" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mixtape03"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_mixtape_image_height"
+                android:contentDescription="@string/mixtape03_name"
+                android:longClickable="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/home_mixtape_text_margin_top"
+                android:paddingRight="@dimen/home_mixtape_padding_right"
+                android:text="@string/mixtape03_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_mixtape_text_size" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mixtape04"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_mixtape_image_height"
+                android:contentDescription="@string/mixtape04_name"
+                android:longClickable="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/home_mixtape_text_margin_top"
+                android:paddingRight="16dp"
+                android:text="@string/mixtape04_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_mixtape_text_size" />
+
+        </FrameLayout>
 
     </LinearLayout>
 

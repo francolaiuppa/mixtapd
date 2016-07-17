@@ -12,7 +12,7 @@
             android:id="@+id/tvArtist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Artist"
+            android:text="@string/item_song_artist"
             android:textSize="@dimen/playlist_contents_item_font_size" />
 
         <TextView
@@ -25,7 +25,7 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Title"
+            android:text="@string/item_song_title"
             android:textSize="@dimen/playlist_contents_item_font_size" />
 
     </LinearLayout>

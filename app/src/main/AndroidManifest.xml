@@ -23,6 +23,9 @@
         <activity
             android:name=".PlaylistContents"
             android:parentActivityName=".NowPlaying"></activity>
+        <activity
+            android:name=".Favorites"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

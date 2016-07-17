@@ -24,6 +24,6 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/background_toolbar_translucent" />
+        android:background="@drawable/background_toolbar_translucent"></android.support.v7.widget.Toolbar>
 
 </FrameLayout>

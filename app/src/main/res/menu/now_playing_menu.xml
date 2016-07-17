@@ -6,5 +6,5 @@
         android:id="@+id/action_music_queue"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_queue_music_black_48dp"
-        android:title="Playlist" />
+        android:title="@string/playlist" />
 </menu>

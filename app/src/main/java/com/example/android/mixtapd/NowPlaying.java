@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -29,6 +29,12 @@ public class NowPlaying extends AppCompatActivity {
         mixtapeName = intent.getStringExtra("name");
         setupBackgroundImage(context, nowPlayingBackground);
         setupToolbar(mixtapeName);
+        goFullscreen();
+    }
+
+    private void goFullscreen() {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
     private void setupBackgroundImage(Context context, ImageView nowPlayingBackground) {
@@ -58,9 +64,6 @@ public class NowPlaying extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Log.v("Tentacle",""+item.getItemId());
-        Log.v("Tentacle","Home Is"+android.R.id.home);
-
         switch (item.getItemId()) {
             case android.R.id.home:
                 startActivity(new Intent(NowPlaying.this, MainActivity.class));

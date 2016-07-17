@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Mixtapd</string>
     <string name="added_to_favorites">Added to favorites</string>
+    <string name="mixtape01_name">Back home Mixtape</string>
+    <string name="mixtape02_name">Mountain trip Mixtape</string>
+    <string name="mixtape03_name">Surfing Mixtape</string>
+    <string name="mixtape04_name">Deep into the city Mixtape</string>
+    <string name="playlist_contents_title"><xliff id="mixtapeName" default="Mixtape Name">%s</xliff> songs</string>
+    <string name="playlist">Playlist</string>
+    <string name="now_playing_song_title">I want you tonight</string>
+    <string name="now_playing_song_artist">Guts</string>
+    <string name="favorites">Favorites</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorites_list">Favorites List</string>
+    <string name="item_song_title">Title</string>
+    <string name="item_song_artist">Artist</string>
+    <string name="close">Close</string>
 </resources>
